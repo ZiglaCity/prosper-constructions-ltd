@@ -1,20 +1,20 @@
 export const metadata = {
   title: "About Us | Prosper Constructions Limited",
   description:
-    "Learn about Prosper Constructions Limited — a trusted partner in engineering, architecture, and infrastructure development.",
+    "Learn about Prosper Constructions Limited — our mission, vision, and commitment to building Ghana’s future with excellence and integrity.",
+  keywords:
+    "about Prosper Constructions, construction company Ghana, Ghana builders, construction excellence, Prosper Limited",
+  openGraph: {
+    title: "About Prosper Constructions Limited",
+    description:
+      "Prosper Constructions Limited is committed to building Ghana’s future through sustainable and quality construction solutions.",
+    url: "https://prosperconstructions.com/about",
+    type: "article",
+    images: ["/prosper-about-og.jpg"],
+  },
 };
 
-import {
-  Building2,
-  Users,
-  Award,
-  Phone,
-  Mail,
-  MapPin,
-  Target,
-  Eye,
-  Heart,
-} from "lucide-react";
+import { Building2, Users, Award, Target, Eye, Heart } from "lucide-react";
 
 export default function AboutPage() {
   return (
