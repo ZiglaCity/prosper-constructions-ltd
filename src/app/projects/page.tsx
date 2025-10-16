@@ -8,6 +8,22 @@ import {
   Users,
 } from "lucide-react";
 
+export const metadata = {
+  title: "Our Projects | Prosper Constructions Limited",
+  description:
+    "View Prosper Constructions Limited’s completed and ongoing projects across Ghana — residential, commercial, and infrastructure developments.",
+  keywords:
+    "construction projects Ghana, Ghana infrastructure, Prosper Constructions projects, real estate Ghana, building Ghana",
+  openGraph: {
+    title: "Prosper Constructions Projects",
+    description:
+      "Explore our portfolio of successful projects that shape Ghana’s landscape.",
+    url: "https://prosperconstructions.com/projects",
+    type: "article",
+    images: ["/prosper-projects-og.jpg"],
+  },
+};
+
 export default function ProjectsPage() {
   const projects = [
     {
