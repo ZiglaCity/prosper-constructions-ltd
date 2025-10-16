@@ -1,5 +1,5 @@
 import Hero from "@@/components/Hero";
-import { Building2, Users, Award, Phone, Mail, MapPin } from "lucide-react";
+import { Building2, Users, Award } from "lucide-react";
 
 export const metadata = {
   title: "Home | Prosper Constructions Limited",
