@@ -2,9 +2,19 @@ import Hero from "@@/components/Hero";
 import { Building2, Users, Award } from "lucide-react";
 
 export const metadata = {
-  title: "Home | Prosper Constructions Limited",
+  title: "Prosper Constructions Limited | Building Ghana's Future",
   description:
-    "Welcome to Prosper Constructions Limited – delivering high-quality construction and engineering solutions with trust and innovation.",
+    "Prosper Constructions Limited delivers high-quality construction services across Ghana — from residential to commercial and infrastructure projects.",
+  keywords:
+    "construction company Ghana, building contractors, residential construction, commercial construction, Prosper Constructions Limited, Ghana builders",
+  openGraph: {
+    title: "Prosper Constructions Limited",
+    description:
+      "Trusted partner for residential, commercial, and infrastructure construction projects across Ghana.",
+    url: "https://prosperconstructions.com/",
+    type: "website",
+    images: ["/prosper-og.jpg"],
+  },
 };
 
 export default function HomePage() {
