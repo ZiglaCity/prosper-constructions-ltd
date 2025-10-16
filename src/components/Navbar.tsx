@@ -19,7 +19,6 @@ export default function Navbar() {
     <header className="bg-white shadow-sm border-b">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          {/* Left - Logo + Title */}
           <div className="flex items-center space-x-2">
             <Building2 className="h-8 w-8 text-orange-600" />
             <div>
@@ -32,7 +31,6 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* Right - Navigation */}
           <nav className="hidden md:flex space-x-8">
             {links.map(({ href, label }) => (
               <Link
