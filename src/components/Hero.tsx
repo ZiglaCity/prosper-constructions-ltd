@@ -48,11 +48,11 @@ export default function Hero() {
       </div>
 
       {/*  Fallback gradient for when video fails */}
-      <style jsx>{`
+      {/* <style jsx>{`
         video:not([src]) + div {
           background: linear-gradient(to right, #ea580c, #dc2626);
         }
-      `}</style>
+      `}</style> */}
       <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 peer-[video:not([src])~&]:opacity-100 transition-opacity" />
     </section>
   );
