@@ -14,7 +14,11 @@ export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitMessage, setSubmitMessage] = useState("");
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
+  ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
@@ -45,6 +49,7 @@ export default function ContactPage() {
       setSubmitMessage(
         "Sorry, there was an error sending your message. Please try again."
       );
+      console.error("Form submission error:", error);
     } finally {
       setIsSubmitting(false);
     }
@@ -72,8 +77,8 @@ export default function ContactPage() {
               Get In Touch
             </h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              We're here to help bring your construction vision to life. Contact
-              us through any of the following methods.
+              We&apos;re here to help bring your construction vision to life.
+              Contact us through any of the following methods.
             </p>
           </div>
 
@@ -117,7 +122,7 @@ export default function ContactPage() {
                 <Clock className="h-8 w-8 text-orange-600" />
               </div>
               <h4 className="text-lg font-semibold mb-3">Business Hours</h4>
-              <p className="text-gray-600 mb-2">We're available</p>
+              <p className="text-gray-600 mb-2">We&apos;re available</p>
               <p className="text-gray-700">Mon - Fri: 8:00 AM - 6:00 PM</p>
               <p className="text-gray-700">Sat: 9:00 AM - 4:00 PM</p>
             </div>
@@ -132,8 +137,8 @@ export default function ContactPage() {
               Send Us a Message
             </h3>
             <p className="text-lg text-gray-600">
-              Fill out the form below and we'll get back to you within 24 hours
-              with a detailed response.
+              Fill out the form below and we&apos;ll get back to you within 24
+              hours with a detailed response.
             </p>
           </div>
 
@@ -209,7 +214,7 @@ export default function ContactPage() {
                     id="projectType"
                     name="projectType"
                     value={formData.projectType}
-                    onChange={handleInputChange}
+                    onChange={(e) => handleInputChange(e)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition-colors"
                   >
                     <option value="">Select project type</option>
@@ -360,8 +365,8 @@ export default function ContactPage() {
             Ready to Build Your Dream Project?
           </h3>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Don't wait any longer. Contact us today and let's turn your
-            construction vision into reality.
+            Don&apos;t wait any longer. Contact us today and let&apos;s turn
+            your construction vision into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

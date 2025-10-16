@@ -2,7 +2,7 @@ import Hero from "@@/components/Hero";
 import { Building2, Users, Award } from "lucide-react";
 
 export const metadata = {
-  title: "Prosper Constructions Limited | Building Ghana's Future",
+  title: "Prosper Constructions Limited | Building Ghana&apos;s Future",
   description:
     "Prosper Constructions Limited delivers high-quality construction services across Ghana — from residential to commercial and infrastructure projects.",
   keywords:
@@ -144,7 +144,7 @@ export default function HomePage() {
             Ready to Start Your Construction Project?
           </h3>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Contact us today for a free consultation and quote. Let's build
+            Contact us today for a free consultation and quote. Let&apos;s build
             something amazing together.
           </p>
           <a

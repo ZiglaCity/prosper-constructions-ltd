@@ -28,8 +28,8 @@ export default function AboutPage() {
               About Prosper Constructions
             </h2>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-              Leading Ghana's construction industry with integrity, innovation,
-              and excellence since our founding
+              Leading Ghana&apos;s construction industry with integrity,
+              innovation, and excellence since our founding
             </p>
           </div>
         </div>
@@ -44,15 +44,15 @@ export default function AboutPage() {
                 Our Story
               </h3>
               <p className="text-lg text-gray-600 mb-6">
-                Founded with a vision to transform Ghana's construction
+                Founded with a vision to transform Ghana&apos;s construction
                 landscape, Prosper Constructions Limited has grown from a small
                 local contractor to one of the most trusted construction
                 companies in the country.
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Our journey began with a simple commitment: to deliver
-                exceptional construction services that exceed our clients'
-                expectations while contributing to Ghana's infrastructure
+                exceptional construction services that exceed our clients&apos;
+                expectations while contributing to Ghana&apos;s infrastructure
                 development and economic growth.
               </p>
               <p className="text-lg text-gray-600">
@@ -130,9 +130,9 @@ export default function AboutPage() {
                 Our Vision
               </h4>
               <p className="text-gray-600">
-                To be Ghana's leading construction company, recognized for
-                innovation, sustainability, and our contribution to the nation's
-                infrastructure development and economic growth.
+                To be Ghana&apos;s leading construction company, recognized for
+                innovation, sustainability, and our contribution to the
+                nation&apos;s infrastructure development and economic growth.
               </p>
             </div>
 
@@ -225,7 +225,7 @@ export default function AboutPage() {
                     Local Expertise
                   </h4>
                   <p className="text-gray-600">
-                    Deep understanding of Ghana's construction regulations,
+                    Deep understanding of Ghana&apos;s construction regulations,
                     climate, and local materials
                   </p>
                 </div>
@@ -312,8 +312,8 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-3xl font-bold mb-4">Ready to Work With Us?</h3>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Let's discuss your construction project and how we can bring your
-            vision to life.
+            Let&apos;s discuss your construction project and how we can bring
+            your vision to life.
           </p>
           <a
             href="/contact"
