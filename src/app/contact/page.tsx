@@ -1,23 +1,7 @@
 "use client";
 
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
-import { useState } from "react";
-
-export const metadata = {
-  title: "Contact Us | Prosper Constructions Limited",
-  description:
-    "Get in touch with Prosper Constructions Limited for consultations, quotes, or partnership inquiries. We’re ready to build your vision in Ghana.",
-  keywords:
-    "contact construction company Ghana, Prosper Constructions contact, get quote construction Ghana, building company Ghana",
-  openGraph: {
-    title: "Contact Prosper Constructions Limited",
-    description:
-      "Reach out today for a quote or to discuss your next construction project in Ghana.",
-    url: "https://prosperconstructions.com/contact",
-    type: "website",
-    images: ["/prosper-contact-og.jpg"],
-  },
-};
+import { FormEvent, useState } from "react";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -38,7 +22,7 @@ export default function ContactPage() {
     }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitMessage("");
