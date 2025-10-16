@@ -9,9 +9,19 @@ import {
 } from "lucide-react";
 
 export const metadata = {
-  title: "Services | Prosper Constructions Limited",
+  title: "Our Services | Prosper Constructions Limited",
   description:
-    "Welcome to Prosper Constructions Limited – delivering high-quality construction and engineering solutions with trust and innovation.",
+    "Explore Prosper Constructions Limited’s wide range of services — from residential and commercial construction to renovation and project management.",
+  keywords:
+    "construction services Ghana, renovation Ghana, project management, building contractors Ghana, Prosper Constructions services",
+  openGraph: {
+    title: "Our Construction Services",
+    description:
+      "Professional construction services tailored to meet Ghana’s growing infrastructure needs.",
+    url: "https://prosperconstructions.com/services",
+    type: "article",
+    images: ["/prosper-services-og.jpg"],
+  },
 };
 
 export default function ServicesPage() {
