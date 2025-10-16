@@ -13,7 +13,7 @@ export default function Hero() {
         preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="workers.mp" type="video/mp4" />
+        <source src="workers.mp4" type="video/mp4" />
         {/* Optional fallback text for accessibility */}
         Your browser does not support the video tag.
       </video>
