@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     "Prosper Constructions Limited — Building Ghana’s Future through excellence in construction.",
   icons: {
-    icon: "/icon.png",
+    icon: "/icon.ico",
   },
 };
 
@@ -116,7 +116,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/icon.png" />
+        <link rel="icon" href="/icon.ico" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
