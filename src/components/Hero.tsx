@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gray-900 text-white py-20 overflow-hidden">
+    <section className="relative h-screen bg-gradient-to-r from-orange-600 to-red-600 text-white overflow-hidden">
       <video
         autoPlay
         loop
@@ -14,14 +14,14 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
       >
         <source src="workers.mp4" type="video/mp4" />
-        {/* Optional fallback text for accessibility */}
         Your browser does not support the video tag.
       </video>
 
-      {/*  Overlay for readability */}
       <div className="absolute inset-0 bg-black/50" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 peer-[video:not([src])~&]:opacity-100 transition-opacity" />
+
+      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-6xl font-bold mb-6">
           Building Excellence in Ghana
         </h2>
@@ -46,14 +46,6 @@ export default function Hero() {
           </Link>
         </div>
       </div>
-
-      {/*  Fallback gradient for when video fails */}
-      {/* <style jsx>{`
-        video:not([src]) + div {
-          background: linear-gradient(to right, #ea580c, #dc2626);
-        }
-      `}</style> */}
-      <div className="absolute inset-0 bg-gradient-to-r from-orange-600 to-red-600 opacity-0 peer-[video:not([src])~&]:opacity-100 transition-opacity" />
     </section>
   );
 }
