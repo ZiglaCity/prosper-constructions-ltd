@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative h-screen bg-gradient-to-r from-orange-600 to-red-600 text-white overflow-hidden">
+    <section className="relative w-full h-screen mt-[-80px] pt-[80px] text-white overflow-hidden">
       <video
         autoPlay
         loop
